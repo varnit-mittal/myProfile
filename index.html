@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Varnit Mittal | Portfolio</title>
+    <meta name="description" content="Single-page portfolio for Varnit Mittal focused on full stack building, AI/ML exploration, and automation." />
+    <link rel="icon" href="assets/vm-favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <canvas id="field" aria-hidden="true"></canvas>
+
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">VM</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#focus">Focus</a>
+          <a href="#work">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="btn btn--ghost" data-magnet>Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-profile">
+            <div class="avatar-shell has-photo" style="--avatar-url: url('assets/profile.jpg');">
+              <span class="avatar-initials">VM</span>
+            </div>
+          </div>
+          <p class="eyebrow">Full Stack + AI/ML + Product Thinking</p>
+          <h1>
+            Varnit Mittal
+            <span class="headline-accent">Building vibrant, AI-first experiences</span>
+          </h1>
+          <p class="subhead">
+            I am a BTech+MTech CSE student at IIIT Bangalore. I design human-centered web
+            experiences, build full stack and blockchain projects, and explore AI/ML to turn
+            complex data into clean, useful systems.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="#focus" data-magnet>Explore Focus</a>
+            <a class="btn btn--ghost" href="https://github.com/varnit-mittal" target="_blank" rel="noreferrer" data-magnet>GitHub</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat">IIIT Bangalore</span>
+              <span class="label">BTech+MTech CSE</span>
+            </div>
+            <div>
+              <span class="stat">Full Stack + Blockchain</span>
+              <span class="label">AI/ML Focus</span>
+            </div>
+            <div>
+              <span class="stat">Bangalore</span>
+              <span class="label">India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal" data-tilt>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="card-content">
+            <h2>AI-Ready Knowledge Systems</h2>
+            <p>
+              I audit, structure, and modernize information so teams get the right answer at the
+              right time. Built for fast discovery, clean handoffs, and trusted knowledge.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Knowledge Design</span>
+              <span class="pill">Workflow Automation</span>
+              <span class="pill">Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section about-section">
+        <div class="section-title reveal">
+          <p class="eyebrow">About</p>
+          <h2>Human-first systems with a technical edge</h2>
+        </div>
+        <div class="split reveal">
+          <div class="about-blurb">
+            <p>
+              I enjoy bridging people operations with AI tooling. My background in full stack
+              development, blockchain, and AI/ML helps me structure data for retrieval, summarize
+              complex policies, and design self-service experiences that feel human.
+            </p>
+            <p>
+              I enjoy shaping clean systems that make work feel easier: clear docs, fast workflows,
+              and interfaces that feel friendly.
+            </p>
+          </div>
+          <div class="stack">
+            <div class="card" data-tilt>
+              <h3>What I bring</h3>
+              <ul>
+                <li>End-to-end product building</li>
+                <li>Data structuring and summarization</li>
+                <li>Clear documentation and storytelling</li>
+                <li>Automation mindset for repetitive tasks</li>
+              </ul>
+            </div>
+            <div class="card" data-tilt>
+              <h3>Currently exploring</h3>
+              <ul>
+                <li>Product analytics and experimentation</li>
+                <li>Design systems and interaction polish</li>
+                <li>Applied AI for knowledge retrieval</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="section section--contrast">
+        <div class="section-title reveal">
+          <p class="eyebrow">Focus</p>
+          <h2>How I ship value</h2>
+        </div>
+        <div class="flow reveal">
+          <div class="flow-step" data-tilt>
+            <span class="flow-count">01</span>
+            <h3>Discover and map</h3>
+            <p>Clarify the problem space, data shape, and user intent before building.</p>
+          </div>
+          <div class="flow-step" data-tilt>
+            <span class="flow-count">02</span>
+            <h3>Build and validate</h3>
+            <p>Ship a clean first version, test quickly, and iterate with real feedback.</p>
+          </div>
+          <div class="flow-step" data-tilt>
+            <span class="flow-count">03</span>
+            <h3>Measure and refine</h3>
+            <p>Track what matters and refine the experience until it feels effortless.</p>
+          </div>
+          <div class="flow-step" data-tilt>
+            <span class="flow-count">04</span>
+            <h3>Automate and scale</h3>
+            <p>Remove repetitive steps and scale knowledge with AI-assisted workflows.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-title reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Pinned projects from GitHub</h2>
+        </div>
+        <div class="grid reveal">
+          <article class="card" data-tilt>
+            <h3>Lawer</h3>
+            <p>This is for Google Solutions.</p>
+            <div class="tags">
+              <span>Makefile</span>
+              <span>Google Solutions</span>
+            </div>
+            <a class="card-link" href="https://github.com/varnit-mittal/lawer" target="_blank" rel="noreferrer">View repo</a>
+          </article>
+          <article class="card" data-tilt>
+            <h3>Decentralized Verification</h3>
+            <p>Created for DevStorm BITS hackathon.</p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>Hackathon</span>
+            </div>
+            <a class="card-link" href="https://github.com/varnit-mittal/decentralized_verification" target="_blank" rel="noreferrer">View repo</a>
+          </article>
+          <article class="card" data-tilt>
+            <h3>Cloud-Distributed-DB</h3>
+            <p>Distributed database systems project.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Systems</span>
+            </div>
+            <a class="card-link" href="https://github.com/varnit-mittal/Cloud-Distributed-DB" target="_blank" rel="noreferrer">View repo</a>
+          </article>
+          <article class="card" data-tilt>
+            <h3>Multi-AgentRL</h3>
+            <p>Multi-agent reinforcement learning experiments.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>RL</span>
+            </div>
+            <a class="card-link" href="https://github.com/varnit-mittal/Multi-AgentRL" target="_blank" rel="noreferrer">View repo</a>
+          </article>
+          <article class="card" data-tilt>
+            <h3>RaCCOT</h3>
+            <p>Research notebook experiments and prototypes.</p>
+            <div class="tags">
+              <span>Jupyter</span>
+              <span>Research</span>
+            </div>
+            <a class="card-link" href="https://github.com/varnit-mittal/RaCCOT" target="_blank" rel="noreferrer">View repo</a>
+          </article>
+          <article class="card" data-tilt>
+            <h3>SASHA</h3>
+            <p>Forked from coglabisc/SASHA.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Fork</span>
+            </div>
+            <a class="card-link" href="https://github.com/varnit-mittal/SASHA" target="_blank" rel="noreferrer">View repo</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--contrast">
+        <div class="section-title reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical fluency with product focus</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-card" data-tilt>
+            <h3>Data + AI</h3>
+            <p>Knowledge modeling, schema design, summarization prompts, retrieval thinking.</p>
+          </div>
+          <div class="skill-card" data-tilt>
+            <h3>Operations</h3>
+            <p>Process documentation, SOP creation, and clear, inclusive communication.</p>
+          </div>
+          <div class="skill-card" data-tilt>
+            <h3>Engineering</h3>
+            <p>Full stack development, blockchain projects, and automation scripting.</p>
+          </div>
+          <div class="skill-card" data-tilt>
+            <h3>Research</h3>
+            <p>Market benchmarking, competitive insights, and program comparison reporting.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title reveal">
+          <p class="eyebrow">Research</p>
+          <h2>How I approach research and strategy</h2>
+        </div>
+        <div class="benchmark reveal">
+          <div class="benchmark-card" data-tilt>
+            <h3>Sources</h3>
+            <ul>
+              <li>Product and market reports</li>
+              <li>User interviews and qualitative feedback</li>
+              <li>Competitor teardowns and public docs</li>
+            </ul>
+          </div>
+          <div class="benchmark-card" data-tilt>
+            <h3>Outputs</h3>
+            <ul>
+              <li>Opportunity map and insight summary</li>
+              <li>Prioritized roadmap recommendations</li>
+              <li>Experiment briefs for fast validation</li>
+            </ul>
+          </div>
+          <div class="benchmark-card" data-tilt>
+            <h3>Metrics</h3>
+            <ul>
+              <li>Adoption, retention, and satisfaction</li>
+              <li>Time-to-value and task completion rate</li>
+              <li>Quality and reliability signals</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contrast">
+        <div class="section-title reveal">
+          <p class="eyebrow">Automation Ideas</p>
+          <h2>AI-first enhancements for ops and product</h2>
+        </div>
+        <div class="automation reveal">
+          <div class="automation-card" data-tilt>
+            <h3>Smart intake</h3>
+            <p>Auto-tag requests and feedback, then route them to the right owner or doc.</p>
+          </div>
+          <div class="automation-card" data-tilt>
+            <h3>Policy Q and A</h3>
+            <p>Contextual Q and A with citations for fast, trustworthy responses.</p>
+          </div>
+          <div class="automation-card" data-tilt>
+            <h3>Doc freshness</h3>
+            <p>AI alerts for stale content and missing data fields across knowledge bases.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-title reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Open to collaborate</h2>
+        </div>
+        <div class="contact-grid reveal">
+          <div class="card" data-tilt>
+            <h3>Links</h3>
+            <p>Reach me through these platforms.</p>
+            <div class="contact-links">
+              <a class="btn" href="https://www.linkedin.com/in/varnit-mittal-44a904254/" target="_blank" rel="noreferrer" data-magnet>LinkedIn</a>
+              <a class="btn btn--ghost" href="https://github.com/varnit-mittal" target="_blank" rel="noreferrer" data-magnet>GitHub</a>
+              <a class="btn btn--ghost" href="https://twitter.com/VARN_03" target="_blank" rel="noreferrer" data-magnet>Twitter</a>
+              <a class="btn btn--ghost" href="mailto:Varnit.Mittal@iiitb.ac.in" data-magnet>Email</a>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <h3>Availability</h3>
+            <p>Based in Bangalore and available for fast iteration with global teams.</p>
+            <p class="contact-email">
+              <a href="mailto:Varnit.Mittal@iiitb.ac.in">Varnit.Mittal@iiitb.ac.in</a>
+            </p>
+            <p class="muted">Open to internships, collaborations, and research projects.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Varnit Mittal</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
